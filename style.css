@@ -45,11 +45,11 @@ html {
 .month i {
   font-size: 2.5rem;
   cursor: pointer;
-  transition: 0.8s;
+  transition: 0.5s;
 }
 
 .month i:hover{
-  color:#716161
+  opacity: 0.5;
 }
 
 
