@@ -123,3 +123,11 @@ html {
   border-radius: 12rem;
   color: #716161;
 }
+
+.clock {
+  margin: 205px 0 0 480px;
+  color: #8D5D54;
+  font-size: 8rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
