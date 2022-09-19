@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Open sans', sans-serif;
 }
 
 html {
@@ -12,36 +12,46 @@ html {
 .container {
   width: 100%;
   height: 100vh;
+  background-image: url("Assets/background.jpg");
   background-color: #12121f;
   color: #eee;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  /* align-items: center; */
 }
 
 .calendar{
   width: 45rem;
   height: 52rem;
-  background-color: #222227;
-  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 4);
+  background-color: #F5EEEE;
+  /* box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 4); */
+  border-radius: 20px;
+  margin: 100px 0 0 183px;
 }
 
 .month{
   width: 100%;
   height: 12rem;
-  background-color: #167e56;
+  background-color: #E1CDC2;
+  color: #8D5D54;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
   text-align: center;
-  text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+  border-radius: 20px 20px 0 0;
 }
 
 .month i {
   font-size: 2.5rem;
   cursor: pointer;
+  transition: 0.8s;
 }
+
+.month i:hover{
+  color:#716161
+}
+
 
 .month h1 {
   font-size: 3rem;
@@ -61,6 +71,7 @@ html {
   padding: 0 0.4rem;
   display: flex;
   align-items: center;
+  color: #8D5D54;
 }
 
 .weekdays div {
@@ -72,7 +83,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
 .days {
@@ -80,6 +91,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   padding: 0.2rem;
+  color: #716161;
 }
 
 .days div {
@@ -91,19 +103,23 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-  transition: background-color 0.2s;
+  text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+  transition: 0.6s;
 }
 
 .days div:hover:not(.today) {
-  background-color: #262626;
-  border: 0.2rem solid #777;
+  background-color: #E1CDC2;
+  /* border: 0.2rem solid #E1CDC2; */
   cursor: pointer;
+  border-radius: 10rem;
 }
+
 .prev-date, .next-date{
   opacity: 0.5;
 }
 
 .today {
-  background-color: #167e56;
+  background-color: #E6DADA;
+  border-radius: 12rem;
+  color: #716161;
 }
